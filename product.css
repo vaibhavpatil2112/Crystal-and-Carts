@@ -1,0 +1,683 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--pink);
+  background-color: rgba(255, 165, 180, 0.705);
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --gradient: linear-gradient(to bottom, #dcd8bddf, #f308a8e6);
+  --pink: (pink);
+  --brown: (brown);
+  --gray: (gray);
+  --grayF: (rgba(158, 157, 157, 0.764));
+  --black: (black);
+  --white: (white);
+  --boxshodow: (rgba(193, 60, 60, 0.786));
+}
+
+/* <!-- ============================================================--------------  Product section ----------------========================================================= --> */
+.product {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(248, 0, 0); */
+}
+.product h1 {
+  font-size: 1.8rem;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  margin-top: -0rem;
+}
+
+.products {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.product a {
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+  margin: 0 0 0 1rem;
+  /* display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  height: 100px; */
+}
+
+.pro1 {
+  height: 75%;
+  width: 70%;
+  /* background-color: #48353589; */
+  margin: 2.5rem;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.pro1 img {
+  height: 80%;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.4rem 0.3em rgba(60, 32, 32, 0.775);
+  cursor: pointer;
+}
+.pro1 .scons {
+  height: 70px;
+  width: 200px;
+  background-color: rgba(128, 128, 128, 0.33);
+  box-shadow: 0 0.3rem 0.4rem 0.3em rgba(162, 95, 95, 0.505);
+  margin-left: 0.8rem;
+}
+.pro1 .scons h3 {
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.pro1 .scons p {
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#profoot {
+  margin-top: -20rem;
+}
+.num {
+  display: flex;
+  justify-content: center;
+}
+.num a p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding: 0.4rem;
+  font-weight: 900;
+  color: rgb(164, 44, 44);
+}
+.num a p:hover {
+  color: black;
+}
+#pro2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 200%;
+  height: 50vh;
+}
+#pro2 img {
+  width: 190%;
+  height: 70vh;
+}
+/* <!-- ============================================================--------------  Bridal section ----------------========================================================= --> */
+
+.bridal {
+  height: 100%;
+  width: 100%;
+}
+.bridal h1 {
+  font-size: 1.8rem;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  margin-top: -0rem;
+}
+.bridals {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: -6rem;
+}
+.bridal1 {
+  height: 100%;
+  width: 80%;
+  margin: 2rem 0 0 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bridal1 img {
+  height: 70%;
+  width: 70%;
+}
+.bridal1 button {
+  font-size: 1.3rem;
+  padding: 0.8rem;
+  background-color: brown;
+  color: white;
+  width: 250px;
+  margin-top: 0.9rem;
+  cursor: pointer;
+}
+
+/* <!-- ============================================================--------------  Bridal1 section ----------------========================================================= --> */
+.bridal a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: black;
+}
+.bridals1 {
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 0.6rem;
+}
+.bri1 {
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  margin: 3rem 0 -12rem 5rem;
+}
+.bri1 img {
+  height: 80%;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* <!-- ============================================================--------------  occasional section ----------------========================================================= --> */
+
+.occasional {
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 4rem 0 0 4rem;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  /* box-shadow: 0 0.3rem 0.4rem 0.3em rgb(152, 34, 34); */
+}
+.occ1 {
+  height: 100%;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  cursor: pointer;
+}
+.occ2 {
+  height: 100%;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 9;
+}
+.occ3 {
+  height: 100%;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 9;
+}
+.occ4 {
+  height: 100%;
+  width: 100%;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 10;
+}
+.occ4 img {
+  height: 100%;
+  width: 100%;
+}
+.occ5 {
+  height: 100%;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 10;
+  grid-row-end: 13;
+  /* margin-top: 0.2rem; */
+}
+.occ5 img {
+  height: 100%;
+  width: 100%;
+}
+
+/* <!-- ============================================================--------------  product component section ----------------========================================================= --> */
+.comp {
+  height: 100%;
+  width: 90%;
+  background-color: rgb(246, 169, 181);
+  display: flex;
+  margin: 2rem 6rem 0 6rem;
+  top: -130%;
+  position: absolute;
+}
+
+.comp.active {
+  top: 0;
+}
+
+.comp .close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 35px;
+  height: 35px;
+  font-size: 40px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.comp1 {
+  height: 100%;
+  width: 50%;
+}
+.comp1 img {
+  height: 70%;
+  width: 80%;
+  margin: 2rem;
+  border-radius: 2rem;
+}
+.comp1 i {
+  font-size: 1.4rem;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  /* position: relative; */
+}
+.c-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: -5rem;
+}
+.c-btn {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 200px;
+  color: white;
+  background-color: brown;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.c-btn:hover {
+  transform: scale(1.1);
+}
+.comp2 {
+  height: 80%;
+  width: 50%;
+}
+.comp2 a {
+  text-decoration: none;
+  color: black;
+}
+.name {
+  font-size: 2rem;
+}
+h3 {
+  color: rgb(87, 80, 80);
+}
+h4 {
+  font-size: 1.2rem;
+  color: brown;
+}
+.rs {
+  font-size: 2rem;
+  color: brown;
+  font-weight: 800;
+}
+.rss {
+  font-size: 1rem;
+  text-decoration-line: line-through;
+  font-weight: 300;
+}
+.rsss {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.cobtn {
+  padding: 0.5rem;
+  background-color: rgba(165, 42, 42, 0.784);
+  width: 70px;
+  color: white;
+  border-radius: 2rem;
+}
+.co {
+  font-size: 1rem;
+  background: none;
+  width: 100%;
+}
+.bxs-package {
+  font-size: 2rem;
+}
+.bxs-purchase-tag {
+  font-size: 1.5rem;
+}
+
+/* <!-- ============================================================--------------  gift section ----------------========================================================= --> */
+.g-img img {
+  width: 100%;
+}
+.g-content {
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 4px;
+  cursor: pointer;
+}
+.gift1 {
+  height: 90%;
+  width: 100%;
+  margin: 2rem 3rem 0 5rem;
+  background-color: rgba(128, 128, 128, 0.745);
+}
+.gift1 img {
+  height: 80%;
+  width: 100%;
+}
+.gift1 p {
+  color: rgb(102, 22, 22);
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  height: 80%;
+  width: 100%;
+  font-weight: 800;
+}
+
+.g-img1 img {
+  width: 100%;
+  margin-top: 15rem;
+}
+
+/* <!-- ============================================================--------------  Mens section ----------------========================================================= --> */
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+.title a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.men {
+  height: 200%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.m {
+  height: 90%;
+  width: 100%;
+  margin: 4rem 2rem 0 5rem;
+  background-color: #c0aaaa90;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+.m p {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+}
+.m span {
+  color: rgb(29, 24, 155);
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+.m-img {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.m-img img {
+  height: 80%;
+  width: 80%;
+  border: 2px solid black;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.m-c {
+  height: 45%;
+  width: 50%;
+  margin-left: 3rem;
+  background-color: #88888896;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.m-c img {
+  height: 50%;
+  width: 30%;
+  margin: -5rem 0 0 35rem;
+}
+
+.m-c h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.m-c p {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.m-c1 {
+  height: 45%;
+  width: 50%;
+  margin: 4rem 0 1rem 45rem;
+  background-color: #88888896;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.m-c1 img {
+  height: 55%;
+  width: 30%;
+  margin: -4rem 0 0 -8rem;
+}
+
+.m-c1 h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.m-c1 p {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center;
+}
+/* <!-- ============================================================--------------  Blog section ----------------========================================================= --> */
+.blo-img img {
+  width: 100%;
+  height: 90%;
+}
+.blo-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+.blo-t {
+  font-size: 2rem;
+  margin-left: 6rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.blo-p {
+  font-size: 1.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+}
+
+.blo-content {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.blo-i {
+  margin: 2rem 2rem 0 6rem;
+}
+.blo-i img {
+  height: 75%;
+  width: 85%;
+}
+.blo-i p {
+  color: brown;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  align-items: center;
+  width: 170px;
+  margin-left: 5rem;
+}
+.blocontent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.bloi {
+  height: 100%;
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.bloi img {
+  height: 70%;
+  width: 120%;
+}
+.bloi p {
+  width: 500px;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+}
+.bloi h1 {
+  width: 500px;
+  margin-left: 5rem;
+}
+
+.blob {
+  background-color: rgb(244, 244, 244);
+  height: 70%;
+}
+/* <!-- ============================================================--------------  About section ----------------========================================================= --> */
+.about {
+  height: 150%;
+  width: 100%;
+  display: flex;
+  column-gap: 1rem;
+}
+.abo1 {
+  height: 100%;
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abo1 a {
+  text-decoration: none;
+  color: black;
+}
+.abo2 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.abo2 .ab-text {
+  width: 90%;
+  background-color: brown;
+  color: white;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 4rem;
+}
+.about-c {
+  margin-left: 5rem;
+  width: 60%;
+}
+
+/* <!-- ============================================================--------------  dropdown section ----------------========================================================= --> */
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  padding: 8px 25px;
+  position: relative;
+  margin-left: -1rem;
+  font-weight: bold;
+}
+
+.menu-bar ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.menu-bar ul li a:hover {
+  color: rgb(224, 46, 106);
+}
+.aaa {
+  font-size: 1.5rem !important ;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
